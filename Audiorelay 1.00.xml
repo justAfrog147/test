@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="feed.xsl"?>
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://zero-install.sourceforge.net/2004/injector/interface https://docs.0install.net/specifications/feed.xsd http://0install.de/schema/desktop-integration/capabilities https://docs.0install.net/specifications/capabilities.xsd" uri="https://github.com/detiam/audiorelay-pkgbuild" min-injector-version="0.18" xmlns="http://zero-install.sourceforge.net/2004/injector/interface">
+  <name>AudioRelay</name>
+  <summary xml:lang="en">Stream your PC audio to your phone</summary>
+  <description xml:lang="en">Stream your PC audio to your phone</description>
+  <icon href="https://www.flaticon.com/free-icon/audio-book_3213211#" type="image/vnd.microsoft.icon" />
+  <icon href="https://www.flaticon.com/free-icon/audio-book_3213211#" type="image/png" />
+  <icon href="https://cdn-icons-png.flaticon.com/512/2778/2778524.png" type="image/png" />
+  <category>AudioVideo</category>
+  <homepage>https://github.com/detiam/audiorelay-pkgbuild</homepage>
+  <needs-terminal />
+  <implementation version="1" id="sha256new_6ZIOHJJBZZMTKNUFAD7A26JDTJ6CZPYMTNFBZVLNH6YP6NZSKOFQ">
+    <command name="run" path="audiorelay.sh">
+      <runner interface="https://apps.0install.net/utils/bash.xml" />
+    </command>
+    <manifest-digest sha256new="6ZIOHJJBZZMTKNUFAD7A26JDTJ6CZPYMTNFBZVLNH6YP6NZSKOFQ" />
+    <archive href="https://github.com/detiam/audiorelay-pkgbuild/archive/refs/heads/main.zip" size="3750" type="application/zip" extract="audiorelay-pkgbuild-main" />
+  </implementation>
+  <entry-point command="run" binary-name="audiorelay" />
+</interface>
+<!-- Base64 Signature
+iQEcBAABAgAGBQJkUeqSAAoJEFIAN6CQJ0RWtNQH/im8Z3S0m3MiB44ZmvJNf2UihoWyNPC1SRcSV7mxEuoIm1tsgkc/dEp5ohM4FFl3v+qwSg40qNPmjajHcFATfRfW/0gwGHQmrcS2wpsQw4rr5FcS0IOECUdBI5YLPVupq+M89C/KUIHnnS79cKRTDN/H6EoEHNAgkwCUrelOjop7gJmVUKDjQ6bvXI2CCr3z0VXPfFxdaN9Yi1pULbqB9VT5d+6p/iwa+yqZ5tnwKXSMK2NVVJeayE5r6tzRH8ONA9Oh4RXQmwFt0WG2I1J7bnujI8WXeVUZgUGwPgOgH/6QuJLgHue3k+EGN2a845rSt35T90VVnnvnjjpPvUpHvMo=
+
+-->
